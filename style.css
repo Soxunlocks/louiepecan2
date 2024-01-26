@@ -69,13 +69,19 @@ canvas {
   }
 
   blockquote p {
-    color: black;
-    background-color: white;
-    font-size: 4rem;
+    color: #41a164;
+    background-color: #000000;
+    font-size: 3rem;
     display: inline;
     line-height: 1;
   }
 
+/* New styles for the author's name */
+.author-name {
+  font-size: 10rem; /* 5x larger than the new blockquote p size */
+  display: block; /* Ensure it appears on a new line */
+  color: #41a164; /* Match the color of the quote text, adjust as needed */
+}
   .left {
     grid-column: 6 / 12;
   }
