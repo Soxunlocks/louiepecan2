@@ -112,3 +112,23 @@ canvas {
 
   /* Add additional styles as needed */
 }
+
+/* New snippet to ensure full page background */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#bg {
+  min-height: 100%;
+  background-attachment: fixed; /* Optional, depending on your design */
+}
+
+canvas {
+  /* If your canvas is the background, ensure it covers the full screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
