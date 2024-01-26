@@ -132,3 +132,10 @@ canvas {
   width: 100vw;
   height: 100vh;
 }
+
+.iframe-container {
+  width: 150%; /* Increase the width to 150% of its parent */
+  margin-left: -25%; /* This will center the section if it overflows on both sides */
+  position: relative; /* Use relative positioning if needed */
+  overflow: hidden; /* Hide the overflow if you want the section not to spill out of the viewport */
+}
