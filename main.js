@@ -65,7 +65,7 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1194252255881342996/1917.gif?ex=65c22215&is=65afad15&hm=cd5f4459d007ec8650ae1672529213fb58055435a630627f22c72978a30d20c2&');
+const jeffTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402795224903800/jeff.png?ex=65c60d38&is=65b39838&hm=63f02e232b9153eedbce54623a5af50ea1453f90a8b8a9738e0709950e64e06e&');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
