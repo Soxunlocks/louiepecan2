@@ -81,11 +81,21 @@ canvas {
   color: #41a164; /* Match the color of the quote text, adjust as needed */
 }
   .left {
-    grid-column: 6 / 12;
+    grid-column: 1 / -1;
     width: 100%;
     text-align: left;
-    background-color: black;
+    background-color: transparent;
     padding: 20px;
+  }
+
+  .left h2 {
+    width: 100%; 
+    font-size: 2rem;
+  }
+
+  .iframe-container {
+    width:100%;
+    background-color: transparent;
   }
 
   /* Add the media query here */
@@ -123,7 +133,7 @@ canvas {
     grid-column: 1 / -1;
     width: 100%;
     text-align: left;
-    background-color: black;
+    background-color: transparent;
     padding: 20px;
   }
 }
@@ -149,8 +159,16 @@ canvas {
 }
 
 .iframe-container {
-  width: 200%; /* Increase the width to 200% of its parent */
+  width: 250%; /* Increase the width to 200% of its parent */
   left: 50%; /* This will center the section if it overflows on both sides */
   position: relative; /* Use relative positioning if needed */
   transform: translateX(-50%); /* Offset the container to the left by half its width */
+}
+
+.left h2 {
+  font-size: 1.5rem;
+}
+
+.left, .iframe-container {
+  width: 100%;
 }
