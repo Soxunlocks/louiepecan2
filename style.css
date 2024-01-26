@@ -85,3 +85,30 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+
+  /* Add the media query here */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  header {
+    grid-column: 1 / -1; /* Make header full width */
+    font-size: 1.5rem; /* Smaller font size for headers */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  section {
+    grid-column: 1 / -1; /* Make sections full width */
+    font-size: 1rem; /* Adjust font size for text */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  blockquote p {
+    font-size: 1.5rem; /* Smaller font size for blockquotes */
+  }
+
+  .author-name {
+    font-size: 2.5rem; /* Smaller font size for author's name */
+  }
+
+  /* Add additional styles as needed */
+}
