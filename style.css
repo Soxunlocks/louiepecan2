@@ -22,10 +22,8 @@ main {
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -110,7 +108,12 @@ canvas {
     font-size: 2.5rem; /* Smaller font size for author's name */
   }
 
-  /* Add additional styles as needed */
+  .iframe-container {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    background-color: transparent;
+  }
 }
 
 /* New snippet to ensure full page background */
@@ -134,7 +137,7 @@ canvas {
 }
 
 .iframe-container {
-  width: 200%; /* Increase the width to 150% of its parent */
+  width: 200%; /* Increase the width to 200% of its parent */
   left: 50%; /* This will center the section if it overflows on both sides */
   position: relative; /* Use relative positioning if needed */
   transform: translateX(-50%); /* Offset the container to the left by half its width */
