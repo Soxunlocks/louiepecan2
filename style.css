@@ -134,8 +134,8 @@ canvas {
 }
 
 .iframe-container {
-  width: 150%; /* Increase the width to 150% of its parent */
-  margin-left: -25%; /* This will center the section if it overflows on both sides */
+  width: 200%; /* Increase the width to 150% of its parent */
+  left: 50%; /* This will center the section if it overflows on both sides */
   position: relative; /* Use relative positioning if needed */
-  overflow: hidden; /* Hide the overflow if you want the section not to spill out of the viewport */
+  transform: translateX(-50%); /* Offset the container to the left by half its width */
 }
