@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402689960448030/space.jpg?ex=65c60d1f&is=65b3981f&hm=3d391a35da2a6ea506f44fe096a6d0393d4e1a427d617c04e756d453613ec04e&');
+const spaceTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402689960448030/space.jpg?ex=65eaf71f&is=65d8821f&hm=31890ed79dba139a094d74faa81e78fec44ae9c16d2362acd56dc4b4a8118a84&');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402795224903800/jeff.png?ex=65c60d38&is=65b39838&hm=63f02e232b9153eedbce54623a5af50ea1453f90a8b8a9738e0709950e64e06e&');
+const jeffTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402795224903800/jeff.png?ex=65eaf738&is=65d88238&hm=b18e5a0027cc2565a4c9c43c0a5317e46ad8fc32150a1cb861c1c104b96a63e7&');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -73,8 +73,8 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402753323814942/moon.jpg?ex=65c60d2e&is=65b3982e&hm=41dcfad3ad7b0c1950a27501286b380bc7e91ae7414b3fb312bc80fde28cbdb9&');
-const normalTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402722374033408/normal.jpg?ex=65c60d27&is=65b39827&hm=df660a17b8501bf6c8d018b98e4986c50b2e4b096ca80b24308cd1a5908ffea7&');
+const moonTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402753323814942/moon.jpg?ex=65eaf72e&is=65d8822e&hm=5cd47966b1e7eb9da438ddb56fcb3e2053645599e8d233501d42c6793b8bdd4f&');
+const normalTexture = new THREE.TextureLoader().load('https://cdn.discordapp.com/attachments/1188018291596341340/1200402722374033408/normal.jpg?ex=65eaf727&is=65d88227&hm=4f4df27a13ec21da5a3388413dc44e240d5154940ca0fefaf5b07bfbe09e9712&');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
